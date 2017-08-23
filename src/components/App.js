@@ -12,7 +12,7 @@ class App extends React.Component {
                     <div className='container'>
                         <Header />
                         <Switch>
-                            <Route exact path='/' component={Home} />
+                            <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
                             <Route render={function () {
                                 return <p>Not Found</p>;
                             }} />
