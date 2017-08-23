@@ -9,7 +9,7 @@ function Header() {
                 title="MPJ Converter"
                 iconElementLeft={<span />}
                 iconElementRight={
-                    <FlatButton href={"https://github.com/oigami/MpjConverter"}>GitHub</FlatButton>
+                    <FlatButton href={"https://github.com/oigami/mpj_converter_web"}>GitHub</FlatButton>
                 }
             />
         </div>
