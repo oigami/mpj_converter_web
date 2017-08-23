@@ -2,8 +2,8 @@
 
 class Mpj {
     decompress(binary) {
-        const buffer = new Buffer(binary, "ascii");
         return new Promise((resolve, reject) => {
+            const buffer = new Uint8Array(binary);
             const mpjHeader = "MMM SaveFile";
             const header = new TextDecoder("utf-16").decode(buffer.slice(0, 32));
             if (mpjHeader !== header.slice(0, header.indexOf('\0'))) {

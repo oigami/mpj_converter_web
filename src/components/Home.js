@@ -195,7 +195,7 @@ class Home extends React.Component {
                     })
                     .catch(error => this.addNotification(file.name, "" + error));
             };
-            reader.readAsBinaryString(file);
+            reader.readAsArrayBuffer(file);
         });
     }
 
