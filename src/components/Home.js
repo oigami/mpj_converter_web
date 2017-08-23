@@ -211,7 +211,6 @@ class Home extends React.Component {
     }
 
     onRemoveClick = (x, i) => {
-        console.log(i);
         const { selectedFiles } = this.state;
         selectedFiles.splice(i, 1);
         this.setState({ selectedFiles: selectedFiles });
